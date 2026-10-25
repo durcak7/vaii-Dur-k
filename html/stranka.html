@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florball Pro - Produkty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-top container">
+        <h1 class="logo">Florball Pro</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Hľadať florbalové vybavenie">
+        </div>
+        <div class="user-actions">
+            <a href="#">Môj účet</a>
+            <a href="#" class="cart">Košík (0)</a>
+        </div>
+    </div>
+    <nav class="main-nav container">
+        <ul>
+            <li><a href="layout.html">Domov</a></li>
+            <li><a href="stranka.html" class="active">Všetky produkty</a></li>
+            <li><a href="#">Florbalové hokejky</a></li>
+            <li><a href="#">Čepele</a></li>
+            <li><a href="#">Loptičky</a></li>
+            <li><a href="#">Obuv</a></li>
+            <li><a href="#">Brankárska výstroj</a></li>
+            <li><a href="#">Doplnky</a></li>
+        </ul>
+        <a href="#" class="contact-link">Kontakt</a>
+    </nav>
+</header>
+
+<main class="container main-content">
+    <div class="breadcrumbs">
+        <a href="layout.html" style="color: inherit; text-decoration: none;">Domov</a> / Všetky produkty
+    </div>
+
+    <div class="catalog-header">
+        <h2>Florbalové vybavenie</h2>
+        <p>Florbalové hokejky, čepele, loptičky a všetko na zápas.</p>
+    </div>
+
+    <div class="catalog-layout">
+        <aside class="filters-sidebar">
+            <div class="filter-header">
+                <h3>Filtre</h3>
+                <a href="#" class="reset-filter">Zrušiť</a>
+            </div>
+
+            <div class="filter-group">
+                <div class="filter-title">Kategória <span>-</span></div>
+                <label><input type="checkbox" checked> Všetko <span class="count">48</span></label>
+                <label><input type="checkbox"> Florbalové hokejky <span class="count">18</span></label>
+                <label><input type="checkbox"> Čepele <span class="count">8</span></label>
+                <label><input type="checkbox"> Loptičky <span class="count">6</span></label>
+                <label><input type="checkbox"> Obuv <span class="count">6</span></label>
+                <label><input type="checkbox"> Brankárska výstroj <span class="count">4</span></label>
+                <label><input type="checkbox"> Doplnky <span class="count">6</span></label>
+            </div>
+
+            <div class="filter-group">
+                <div class="filter-title">Cena <span>-</span></div>
+                <div class="price-inputs">
+                    <input type="text" value="0 €">
+                    <input type="text" value="200 €">
+                </div>
+                <input type="range" min="0" max="200" value="200" class="price-slider">
+            </div>
+
+            <div class="filter-group">
+                <div class="filter-title">Značka <span>-</span></div>
+                <label><input type="checkbox"> Unihoc <span class="count">12</span></label>
+                <label><input type="checkbox"> Salming <span class="count">9</span></label>
+                <label><input type="checkbox"> Oxdog <span class="count">7</span></label>
+                <label><input type="checkbox"> Zone <span class="count">5</span></label>
+            </div>
+
+            <div class="filter-group">
+                <div class="filter-title">Dostupnosť <span>-</span></div>
+                <label><input type="checkbox"> Na sklade</label>
+                <label><input type="checkbox"> Na objednávku</label>
+            </div>
+        </aside>
+
+        <section class="products-section">
+            <div class="products-toolbar">
+                <span>Zobrazené 1-6 zo 48 produktov</span>
+                <div class="sort-box">
+                    Zoradiť: <strong>Odporúčané</strong> ▾
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <!-- Produkt 1 -->
+                <div class="product-card">
+                    <div class="product-img-placeholder">
+                        <img src="img/hokejka sonic.png" alt="Hokejka Unihoc Sonic 29">
+                    </div>
+                    <span class="product-category">HOKEJKY</span>
+                    <h4 class="product-title">Hokejka Unihoc Sonic 29</h4>
+                    <span class="product-params">Ľavá / Pravá · 96 cm</span>
+                    <div class="product-price">89,90 €</div>
+                    <button class="btn-primary">Do košíka</button>
+                </div>
+
+                <!-- Produkt 2 -->
+                <div class="product-card">
+                    <div class="product-img-placeholder">
+                        <img src="img/Čepeľ Zone Hyper.png" alt="Čepeľ Zone Hyper">
+                    </div>
+                    <span class="product-category">ČEPELE</span>
+                    <h4 class="product-title">Čepeľ Zone Hyper</h4>
+                    <span class="product-params">Ľavá / Pravá · PP</span>
+                    <div class="product-price">29,90 €</div>
+                    <button class="btn-primary">Do košíka</button>
+                </div>
+
+                <!-- Produkt 3 -->
+                <div class="product-card">
+                    <div class="product-img-placeholder">
+                        <img src="img/lopticky.png" alt="Loptičky IFF · 3 ks">
+                    </div>
+                    <span class="product-category">LOPTIČKY</span>
+                    <h4 class="product-title">Loptičky IFF · 3 ks</h4>
+                    <span class="product-params">Biele · Schválené IFF</span>
+                    <div class="product-price">9,90 €</div>
+                    <button class="btn-primary">Do košíka</button>
+                </div>
+
+                <!-- Produkt 4 -->
+                <div class="product-card">
+                    <div class="product-img-placeholder">
+                        <img src="img/obuv.png" alt="Salming Viper Indoor">
+                    </div>
+                    <span class="product-category">OBUV</span>
+                    <h4 class="product-title">Salming Viper Indoor</h4>
+                    <span class="product-params">EU 38–46 · Unisex</span>
+                    <div class="product-price">119,90 €</div>
+                    <button class="btn-primary">Do košíka</button>
+                </div>
+
+                <!-- Produkt 5 -->
+                <div class="product-card">
+                    <div class="product-img-placeholder">
+                        <img src="img/maska.png" alt="Maska Unihoc Shield">
+                    </div>
+                    <span class="product-category">BRANKÁRSKA VÝSTROJ</span>
+                    <h4 class="product-title">Maska Unihoc Shield</h4>
+                    <span class="product-params">Senior · Nastaviteľná</span>
+                    <div class="product-price">79,90 €</div>
+                    <button class="btn-primary">Do košíka</button>
+                </div>
+
+                <!-- Produkt 6 -->
+                <div class="product-card">
+                    <div class="product-img-placeholder">
+                        <img src="img/omotavka.png" alt="Omotávka Oxdog Touch">
+                    </div>
+                    <span class="product-category">DOPLNKY</span>
+                    <h4 class="product-title">Omotávka Oxdog Touch</h4>
+                    <span class="product-params">Čierna · 180 cm</span>
+                    <div class="product-price">12,90 €</div>
+                    <button class="btn-primary">Do košíka</button>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <span class="dots">...</span>
+                <button class="page-btn">8</button>
+                <button class="page-btn next">Ďalej →</button>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        <div class="footer-left">
+            <strong>Florball Pro</strong>
+            <span>Kontakt</span>
+            <span>Doprava</span>
+            <span>Vrátenie tovaru</span>
+        </div>
+        <div class="footer-right">© 2026 Florball Pro</div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,509 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #111;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HLAVIČKA */
+.site-header {
+    border-bottom: 1px solid #e0e0e0;
+    background: #fff;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.search-bar {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 40px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.user-actions {
+    display: flex;
+    gap: 20px;
+}
+
+.user-actions a {
+    text-decoration: none;
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f0f0f0;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+.main-nav a {
+    display: block;
+    padding: 14px 0;
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav a.active, .main-nav a:hover {
+    color: #111;
+    border-bottom-color: #111;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+/* OBSAH */
+.main-content {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.breadcrumbs {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 16px;
+}
+
+.catalog-header {
+    margin-bottom: 30px;
+}
+
+.catalog-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.catalog-header p {
+    color: #666;
+    font-size: 14px;
+}
+
+.catalog-layout {
+    display: flex;
+    gap: 40px;
+}
+
+/* DOMOVSKÉ PRVKY (BANNER A KARTY) */
+.home-banner-box {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 30px;
+    margin-bottom: 30px;
+    background: #fafafa;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-banner-text {
+    max-width: 50%;
+}
+
+.banner-tag {
+    font-size: 11px;
+    font-weight: 700;
+    color: #777;
+    text-transform: uppercase;
+}
+
+.home-banner-text h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.home-banner-text p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.banner-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.home-banner-img {
+    width: 45%;
+    height: 200px;
+    background: #e9e9e9;
+    border: 1px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    border-radius: 4px;
+}
+
+.home-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.home-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 20px;
+    background: #fff;
+}
+
+.card-icon {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    font-size: 16px;
+    background: #f9f9f9;
+}
+
+.home-card h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.home-card p {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.home-card a {
+    font-size: 13px;
+    font-weight: 600;
+    color: #111;
+    text-decoration: underline;
+}
+
+/* BOČNÉ FILTRE */
+.filters-sidebar {
+    width: 260px;
+    flex-shrink: 0;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+}
+
+.filter-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.reset-filter {
+    font-size: 13px;
+    color: #666;
+    text-decoration: none;
+}
+
+.filter-group {
+    margin-bottom: 24px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 16px;
+}
+
+.filter-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-group label {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.filter-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.count {
+    margin-left: auto;
+    color: #888;
+    font-size: 12px;
+}
+
+.price-inputs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.price-inputs input {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.price-slider {
+    width: 100%;
+}
+
+/* PRODUKTY */
+.products-section {
+    flex: 1;
+}
+
+.products-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.sort-box {
+    color: #111;
+    cursor: pointer;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+.product-img-placeholder {
+    width: 100%;
+    height: 180px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.product-img-placeholder img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.product-category {
+    font-size: 11px;
+    font-weight: 700;
+    color: #777;
+    margin-bottom: 4px;
+}
+
+.product-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.product-params {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 12px;
+    margin-top: auto;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #111;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: #111;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-primary:hover {
+    background: #111;
+    color: #fff;
+}
+
+/* STRÁNKOVANIE */
+.pagination {
+    display: flex;
+    gap: 6px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.page-btn {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    background: #fff;
+    font-size: 13px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.page-btn.active {
+    background: #111;
+    color: #fff;
+    border-color: #111;
+}
+
+.dots {
+    padding: 0 4px;
+    color: #666;
+}
+
+/* PÄTIČKA */
+.site-footer {
+    border-top: 1px solid #e0e0e0;
+    padding: 30px 0;
+    background: #fafafa;
+    font-size: 13px;
+    color: #555;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-left strong {
+    color: #111;
+}
+
+.footer-left span {
+    color: #555;
+    cursor: default;
+}
+
+/* RESPONZÍVNOSŤ */
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .search-bar {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+    .main-nav ul {
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 16px;
+    }
+    .catalog-layout, .home-banner-box, .home-cards-grid {
+        flex-direction: column;
+    }
+    .home-banner-text, .home-banner-img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .filters-sidebar {
+        width: 100%;
+    }
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+    .footer-left {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
